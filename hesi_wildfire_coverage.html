@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypical Urban Wildfire Event: California (HESI)</title>
+    <!-- Tippy.js dependencies -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.umd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/animations/scale.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.3.7/themes/light.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .paper {
+            background-color: white;
+            width: 8.5in;
+            min-height: 11in;
+            padding: 1in;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            line-height: 1.6;
+            font-size: 12pt;
+        }
+        .metadata {
+            margin-bottom: 20px;
+            font-size: 10pt;
+            color: #666;
+        }
+        .highlight {
+            cursor: pointer;
+            padding: 0 2px;
+            border-radius: 2px;
+            position: relative;
+            transition: all 0.2s;
+        }
+        .highlight:hover {
+            outline: 1px solid #333;
+            opacity: 1 !important;
+        }
+        
+        /* Tooltip custom styles */
+        .tippy-box {
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+        }
+        
+        .tippy-box[data-theme~='entity-event'] {
+            background-color: #333;
+            color: white;
+            max-width: 350px !important;
+        }
+        
+        .tippy-box[data-theme~='entity-event'] .tippy-content {
+            padding: 10px;
+        }
+        
+        h1 {
+            font-size: 18pt;
+            margin-bottom: 20px;
+        }
+        .legend {
+            margin-top: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .legend-item {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 8px;
+        }
+        .legend-color {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            vertical-align: middle;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <h1>Prototypical Urban Wildfire Event: California (HESI)</h1>
+        <div class="metadata">
+            <p>Author: User Provided Text</p>
+            <p>Date: 2025-03-07T11:46:18.934740</p>
+        </div>
+        <div class="content">
+            Prototypical <span id="highlight-1" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">Wildfire</span> Progression in <span id="highlight-2" class="highlight" style="background-color: #d1b2e5;" data-tippy-content="Urban Environments (Entity: Location)">Urban Environments</span> <span id="highlight-3" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2dbe550, #b2dbe550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Wildfire Initiation (Event: Occurrence)">Wildfire</span><span id="highlight-4" class="highlight" style="background-color: #b2dbe5;" data-tippy-content="Wildfire Initiation (Event: Occurrence)"> initiation</span> occurs near <span id="highlight-5" class="highlight" style="background-color: #bfe5b2;" data-tippy-content="Populated Areas (Entity: Location)">populated areas</span> through <span id="highlight-6" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e250, #b2e5e250);" data-tippy-content="Human Activities (Entity: Object)&lt;br /&gt;Human Activities (Event: Action)">human activities</span>, <span id="highlight-7" class="highlight" style="background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#cfb2e550, #cfb2e550);" data-tippy-content="Electrical Failures (Entity: Object)&lt;br /&gt;Electrical Failures (Event: Occurrence)">electrical failures</span>, or <span id="highlight-8" class="highlight" style="background-image: linear-gradient(#b2dfe550, #b2dfe550); background-image: linear-gradient(#b2dfe550, #b2dfe550);" data-tippy-content="Lightning Strikes (Entity: Object)&lt;br /&gt;Lightning Strikes (Event: Occurrence)">lightning strikes</span>. <span id="highlight-9" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e4e550, #b2e4e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Ignition (Event: Occurrence)">Ignition</span><span id="highlight-10" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> creates </span><span id="highlight-11" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e1e5b250, #e1e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Heat Transfer (Event: Occurrence)">heat transfer</span><span id="highlight-12" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> to surrounding </span><span id="highlight-13" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cee5b250, #cee5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fuels (Entity: Object)">fuels</span><span id="highlight-14" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> like </span><span id="highlight-15" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b750, #e5b2b750);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Dry Chaparral (Entity: Object)">dry chaparral</span><span id="highlight-16" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">, </span><span id="highlight-17" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c5b250, #e5c5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Ornamental Vegetation (Entity: Object)">ornamental vegetation</span><span id="highlight-18" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">, and </span><span id="highlight-19" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e4b2e550, #e4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Debris (Entity: Object)">debris</span><span id="highlight-20" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> common in </span><span id="highlight-21" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5d5b250, #e5d5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Southern California (Entity: Location)">Southern California</span><span id="highlight-22" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> landscapes.</span> <span id="highlight-23" class="highlight" style="background-color: #e5b2cb;" data-tippy-content="Materials Ignition (Event: Occurrence)">These materials ignite at 300-400°F due to low moisture content, making </span><span id="highlight-24" class="highlight" style="background-image: linear-gradient(#e5b2cb50, #e5b2cb50); background-image: linear-gradient(#d7e5b250, #d7e5b250);" data-tippy-content="Materials Ignition (Event: Occurrence)&lt;br /&gt;Hillside Communities (Entity: Location)">hillside communities</span><span id="highlight-25" class="highlight" style="background-color: #e5b2cb;" data-tippy-content="Materials Ignition (Event: Occurrence)"> vulnerable to rapid </span><span id="highlight-26" class="highlight" style="background-image: linear-gradient(#e5b2cb50, #e5b2cb50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Materials Ignition (Event: Occurrence)&lt;br /&gt;Fire Establishment (Event: Occurrence)">fire establishment</span><span id="highlight-27" class="highlight" style="background-color: #e5b2cb;" data-tippy-content="Materials Ignition (Event: Occurrence)">.</span> <span id="highlight-28" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)">The fire enters establishment phase within </span><span id="highlight-29" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550); background-image: linear-gradient(#d3b2e550, #d3b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)&lt;br /&gt;Neighborhoods (Entity: Location)">neighborhoods</span><span id="highlight-30" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)"> as </span><span id="highlight-31" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550); background-image: linear-gradient(#e5d4b250, #e5d4b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)&lt;br /&gt;Flames (Entity: Object)">flames</span><span id="highlight-32" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)"> spread to </span><span id="highlight-33" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550); background-image: linear-gradient(#e5b2d950, #e5b2d950);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)&lt;br /&gt;Residential Landscaping (Entity: Object)">residential landscaping</span><span id="highlight-34" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)">, </span><span id="highlight-35" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550); background-image: linear-gradient(#e5c1b250, #e5c1b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)&lt;br /&gt;Fences (Entity: Object)">fences</span><span id="highlight-36" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)">, and </span><span id="highlight-37" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550); background-image: linear-gradient(#b2e5d150, #b2e5d150);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)&lt;br /&gt;Outbuildings (Entity: Object)">outbuildings</span><span id="highlight-38" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#bae5b250, #bae5b250); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Establishment (Event: Occurrence)&lt;br /&gt;Fire Entering Establishment Phase (Event: Change)&lt;br /&gt;Flames Spreading (Event: Occurrence)">.</span> <span id="highlight-39" class="highlight" style="background-color: #dfb2e5;" data-tippy-content="Heat Transfer (Event: Occurrence)">Heat transfer</span>s through conduction, convection, and radiation to nearby <span id="highlight-40" class="highlight" style="background-color: #b2e5bc;" data-tippy-content="Homes (Entity: Object)">homes</span>. <span id="highlight-41" class="highlight" style="background-image: linear-gradient(#e5b2d450, #e5b2d450); background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050);" data-tippy-content="Wind Conditions (Entity: Object)&lt;br /&gt;Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)">Wind conditions</span><span id="highlight-42" class="highlight" style="background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050);" data-tippy-content="Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)"> amplified in </span><span id="highlight-43" class="highlight" style="background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2b7e550, #b2b7e550);" data-tippy-content="Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)&lt;br /&gt;Canyons (Entity: Location)">canyons</span><span id="highlight-44" class="highlight" style="background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050);" data-tippy-content="Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)"> create tunneling effects through </span><span id="highlight-45" class="highlight" style="background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#d9e5b250, #d9e5b250);" data-tippy-content="Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)&lt;br /&gt;Streets (Entity: Location)">streets</span><span id="highlight-46" class="highlight" style="background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050);" data-tippy-content="Wind Amplification (Event: Occurrence)&lt;br /&gt;Tunneling Effects Creation (Event: Occurrence)">.</span> <span id="highlight-47" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)">When the fire develops sustainable combustion, it often engulfs multiple </span><span id="highlight-48" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550); background-image: linear-gradient(#d6b2e550, #d6b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)&lt;br /&gt;Structures (Entity: Object)">structures</span><span id="highlight-49" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)"> within minutes during </span><span id="highlight-50" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550); background-image: linear-gradient(#e5b2b550, #e5b2b550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)&lt;br /&gt;Strong Winds (Entity: Object)">strong winds</span><span id="highlight-51" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)">, triggering </span><span id="highlight-52" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550); background-image: linear-gradient(#b2d7e550, #b2d7e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)&lt;br /&gt;Evacuations (Entity: Object)">evacuations</span><span id="highlight-53" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)"> and creating immediate </span><span id="highlight-54" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550); background-image: linear-gradient(#e5b3b250, #e5b3b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)&lt;br /&gt;Shelter Needs (Entity: Object)">shelter needs</span><span id="highlight-55" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#e5b2da50, #e5b2da50); background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#b2cee550, #b2cee550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Developing Sustainable Combustion (Event: Change)&lt;br /&gt;Fire Engulfing Structures (Event: Occurrence)&lt;br /&gt;Evacuations Triggering (Event: Action)&lt;br /&gt;Shelter Needs Creation (Event: Change)">.</span> <span id="highlight-56" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)">During growth phase, the fire expands through </span><span id="highlight-57" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250); background-image: linear-gradient(#e5b2cc50, #e5b2cc50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)&lt;br /&gt;Residential Areas (Entity: Location)">residential areas</span><span id="highlight-58" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)">, </span><span id="highlight-59" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250); background-image: linear-gradient(#e5b2ba50, #e5b2ba50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)&lt;br /&gt;Commercial Districts (Entity: Location)">commercial districts</span><span id="highlight-60" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)">, and surrounding </span><span id="highlight-61" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250); background-image: linear-gradient(#e5b3b250, #e5b3b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)&lt;br /&gt;Vegetation (Entity: Object)">vegetation</span><span id="highlight-62" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#e5ddb250, #e5ddb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Growth Phase (Event: Change)&lt;br /&gt;Fire Expansion (Event: Occurrence)">.</span> <span id="highlight-63" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)">Fire follows paths with continuous </span><span id="highlight-64" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#e5beb250, #e5beb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)&lt;br /&gt;Fuel Beds (Entity: Object)">fuel beds</span><span id="highlight-65" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)"> including </span><span id="highlight-66" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#e5bab250, #e5bab250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)&lt;br /&gt;Connected Vegetation (Entity: Object)">connected vegetation</span><span id="highlight-67" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)"> and </span><span id="highlight-68" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#b4e5b250, #b4e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)&lt;br /&gt;Wooden Structures (Entity: Object)">wooden structures</span><span id="highlight-69" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Following Paths (Event: Occurrence)">.</span> <span id="highlight-70" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c9b2e550, #c9b2e550); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Upslope Progression (Event: Occurrence)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)">Upslope progression</span><span id="highlight-71" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)"> in </span><span id="highlight-72" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250); background-image: linear-gradient(#d7e5b250, #d7e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)&lt;br /&gt;Hillside Communities (Entity: Location)">hillside communities</span><span id="highlight-73" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)"> occurs at accelerated rates, forcing rapid </span><span id="highlight-74" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250); background-image: linear-gradient(#b7b2e550, #b7b2e550); background-image: linear-gradient(#b7b2e550, #b7b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)&lt;br /&gt;Evacuation Orders (Entity: Object)&lt;br /&gt;Evacuation Orders (Event: Action)">evacuation orders</span><span id="highlight-75" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)"> that overwhelm </span><span id="highlight-76" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250); background-image: linear-gradient(#e5b2d150, #e5b2d150);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)&lt;br /&gt;Transportation Infrastructure (Entity: Object)">transportation infrastructure</span><span id="highlight-77" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Transportation Infrastructure Overwhelming (Event: Occurrence)">.</span> <span id="highlight-78" class="highlight" style="background-image: linear-gradient(#b2c8e550, #b2c8e550); background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550);" data-tippy-content="Critical Facilities (Entity: Organization)&lt;br /&gt;Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)">Critical facilities</span><span id="highlight-79" class="highlight" style="background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550);" data-tippy-content="Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)"> require specialized </span><span id="highlight-80" class="highlight" style="background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550); background-image: linear-gradient(#b8e5b250, #b8e5b250);" data-tippy-content="Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)&lt;br /&gt;Evacuation Resources (Entity: Object)">evacuation resources</span><span id="highlight-81" class="highlight" style="background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550);" data-tippy-content="Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)">, creating complex </span><span id="highlight-82" class="highlight" style="background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550); background-image: linear-gradient(#b2d6e550, #b2d6e550);" data-tippy-content="Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)&lt;br /&gt;Prioritization Challenges (Entity: Object)">prioritization challenges</span><span id="highlight-83" class="highlight" style="background-image: linear-gradient(#e5bcb250, #e5bcb250); background-image: linear-gradient(#ceb2e550, #ceb2e550);" data-tippy-content="Critical Facilities Evacuation (Event: Action)&lt;br /&gt;Prioritization Challenges Creation (Event: Occurrence)">.</span> <span id="highlight-84" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e0b2e550, #e0b2e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2e5d050, #b2e5d050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Intensification (Event: Change)&lt;br /&gt;Weather Systems Creation (Event: Occurrence)&lt;br /&gt;Firefighting Efforts Challenging (Event: Occurrence)">Intensifying fire creates localized </span><span id="highlight-85" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e0b2e550, #e0b2e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2e5d050, #b2e5d050); background-image: linear-gradient(#b2e5d050, #b2e5d050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Intensification (Event: Change)&lt;br /&gt;Weather Systems Creation (Event: Occurrence)&lt;br /&gt;Firefighting Efforts Challenging (Event: Occurrence)&lt;br /&gt;Weather Systems (Entity: Object)">weather systems</span><span id="highlight-86" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e0b2e550, #e0b2e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2e5d050, #b2e5d050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Intensification (Event: Change)&lt;br /&gt;Weather Systems Creation (Event: Occurrence)&lt;br /&gt;Firefighting Efforts Challenging (Event: Occurrence)"> that challenge </span><span id="highlight-87" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e0b2e550, #e0b2e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2e5d050, #b2e5d050); background-image: linear-gradient(#e5b2e150, #e5b2e150);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Intensification (Event: Change)&lt;br /&gt;Weather Systems Creation (Event: Occurrence)&lt;br /&gt;Firefighting Efforts Challenging (Event: Occurrence)&lt;br /&gt;Firefighting Efforts (Entity: Object)">firefighting efforts</span><span id="highlight-88" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e0b2e550, #e0b2e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2e5d050, #b2e5d050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Intensification (Event: Change)&lt;br /&gt;Weather Systems Creation (Event: Occurrence)&lt;br /&gt;Firefighting Efforts Challenging (Event: Occurrence)">.</span> <span id="highlight-89" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b5e5b250, #b5e5b250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)">Convection columns</span><span id="highlight-90" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)"> draw surrounding air while expelling heated air vertically, pulling </span><span id="highlight-91" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550); background-image: linear-gradient(#e5d4b250, #e5d4b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)&lt;br /&gt;Flames (Entity: Object)">flames</span><span id="highlight-92" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)"> toward </span><span id="highlight-93" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550); background-image: linear-gradient(#d4b2e550, #d4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)&lt;br /&gt;Adjacent Buildings (Entity: Object)">adjacent buildings</span><span id="highlight-94" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d6e5b250, #d6e5b250); background-image: linear-gradient(#b2e5dd50, #b2e5dd50); background-image: linear-gradient(#b2bce550, #b2bce550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Convection Columns Drawing Air (Event: Occurrence)&lt;br /&gt;Heated Air Expelling (Event: Occurrence)&lt;br /&gt;Flames Pulling (Event: Occurrence)">.</span> <span id="highlight-95" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2dfe550, #b2dfe550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Fire-altered Weather (Entity: Object)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)">Fire-altered weather</span><span id="highlight-96" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)"> severely impacts </span><span id="highlight-97" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)&lt;br /&gt;Air Quality (Entity: Object)">air quality</span><span id="highlight-98" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)"> across urban areas, triggering </span><span id="highlight-99" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250); background-image: linear-gradient(#b2e5c450, #b2e5c450); background-image: linear-gradient(#b2e5c450, #b2e5c450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)&lt;br /&gt;Respiratory Emergencies (Entity: Object)&lt;br /&gt;Respiratory Emergencies (Event: Occurrence)">respiratory emergencies</span><span id="highlight-100" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d1b2e550, #d1b2e550); background-image: linear-gradient(#b2bae550, #b2bae550); background-image: linear-gradient(#cbe5b250, #cbe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Urban Environments (Entity: Location)&lt;br /&gt;Weather Alteration (Event: Change)&lt;br /&gt;Air Quality Impact (Event: Change)">.</span> <span id="highlight-101" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)">At </span><span id="highlight-102" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250); background-image: linear-gradient(#cee5b250, #cee5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)&lt;br /&gt;Peak Development (Event: Change)">peak development</span><span id="highlight-103" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)">, fire consumes both </span><span id="highlight-104" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250); background-image: linear-gradient(#e5b3b250, #e5b3b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)&lt;br /&gt;Vegetation (Entity: Object)">vegetation</span><span id="highlight-105" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)"> and </span><span id="highlight-106" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250); background-image: linear-gradient(#d6b2e550, #d6b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)&lt;br /&gt;Structures (Entity: Object)">structures</span><span id="highlight-107" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Consumption (Event: Occurrence)"> with intensities exceeding 10,000 kW/m.</span> <span id="highlight-108" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d3b2e550, #d3b2e550); background-image: linear-gradient(#e5d4b250, #e5d4b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Neighborhoods (Entity: Location)&lt;br /&gt;Flame Height Reaching (Event: Change)">Flame heights reach over 100 feet, resulting in </span><span id="highlight-109" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d3b2e550, #d3b2e550); background-image: linear-gradient(#e5d4b250, #e5d4b250); background-image: linear-gradient(#e5c9b250, #e5c9b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Neighborhoods (Entity: Location)&lt;br /&gt;Flame Height Reaching (Event: Change)&lt;br /&gt;Neighborhood Destruction (Event: Occurrence)">neighborhood destruction</span><span id="highlight-110" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d3b2e550, #d3b2e550); background-image: linear-gradient(#e5d4b250, #e5d4b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Neighborhoods (Entity: Location)&lt;br /&gt;Flame Height Reaching (Event: Change)">.</span> <span id="highlight-111" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e1b2e550, #e1b2e550); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Preheating (Event: Occurrence)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)">Preheating</span><span id="highlight-112" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)"> accelerates combustion as fire advances, overwhelming </span><span id="highlight-113" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50); background-image: linear-gradient(#e5b2c050, #e5b2c050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)&lt;br /&gt;Resources (Entity: Object)">resources</span><span id="highlight-114" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)"> and forcing </span><span id="highlight-115" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50); background-image: linear-gradient(#d8b2e550, #d8b2e550); background-image: linear-gradient(#d8b2e550, #d8b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)&lt;br /&gt;Triage Decisions (Entity: Object)&lt;br /&gt;Triage Decisions (Event: Action)">triage decisions</span><span id="highlight-116" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5e050, #b2e5e050); background-image: linear-gradient(#b2c6e550, #b2c6e550); background-image: linear-gradient(#b2e5ca50, #b2e5ca50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Combustion Acceleration (Event: Change)&lt;br /&gt;Fire Advancement (Event: Occurrence)&lt;br /&gt;Resources Overwhelming (Event: Occurrence)">.</span> <span id="highlight-117" class="highlight" style="background-image: linear-gradient(#e4e5b250, #e4e5b250); background-image: linear-gradient(#b2e5bf50, #b2e5bf50);" data-tippy-content="Essential Infrastructure (Entity: Object)&lt;br /&gt;Cascading Impacts Creation (Event: Occurrence)">Essential </span><span id="highlight-118" class="highlight" style="background-image: linear-gradient(#e4e5b250, #e4e5b250); background-image: linear-gradient(#b2e5bf50, #b2e5bf50); background-image: linear-gradient(#cab2e550, #cab2e550);" data-tippy-content="Essential Infrastructure (Entity: Object)&lt;br /&gt;Cascading Impacts Creation (Event: Occurrence)&lt;br /&gt;Infrastructure Damage (Event: Occurrence)">infrastructure</span><span id="highlight-119" class="highlight" style="background-image: linear-gradient(#b2e5bf50, #b2e5bf50); background-image: linear-gradient(#cab2e550, #cab2e550);" data-tippy-content="Cascading Impacts Creation (Event: Occurrence)&lt;br /&gt;Infrastructure Damage (Event: Occurrence)"> damage</span><span id="highlight-120" class="highlight" style="background-color: #b2e5bf;" data-tippy-content="Cascading Impacts Creation (Event: Occurrence)"> creates cascading impacts through </span><span id="highlight-121" class="highlight" style="background-image: linear-gradient(#b2e5bf50, #b2e5bf50); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Cascading Impacts Creation (Event: Occurrence)&lt;br /&gt;Service Disruptions (Entity: Object)&lt;br /&gt;Service Disruptions (Event: Occurrence)">service disruptions</span><span id="highlight-122" class="highlight" style="background-color: #b2e5bf;" data-tippy-content="Cascading Impacts Creation (Event: Occurrence)">.</span> <span id="highlight-123" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)">When fire transitions to the </span><span id="highlight-124" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50); background-image: linear-gradient(#e5b2ca50, #e5b2ca50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)&lt;br /&gt;Urban Canopy (Entity: Location)">urban canopy</span><span id="highlight-125" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)">, it threatens </span><span id="highlight-126" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50); background-image: linear-gradient(#b2d0e550, #b2d0e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)&lt;br /&gt;Multi-story Buildings (Entity: Object)">multi-story buildings</span><span id="highlight-127" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)">, </span><span id="highlight-128" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50); background-image: linear-gradient(#d7e5b250, #d7e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure (Entity: Object)">utility infrastructure</span><span id="highlight-129" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)">, and </span><span id="highlight-130" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50); background-image: linear-gradient(#e5b2c250, #e5b2c250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes (Entity: Object)">evacuation routes</span><span id="highlight-131" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#cfb2e550, #cfb2e550); background-image: linear-gradient(#b2cfe550, #b2cfe550); background-image: linear-gradient(#b2e5db50, #b2e5db50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Transition To Urban Canopy (Event: Change)&lt;br /&gt;Buildings Threatening (Event: Occurrence)&lt;br /&gt;Utility Infrastructure Threatening (Event: Occurrence)&lt;br /&gt;Evacuation Routes Threatening (Event: Occurrence)">.</span> <span id="highlight-132" class="highlight" style="background-image: linear-gradient(#e5ceb250, #e5ceb250); background-image: linear-gradient(#e4e5b250, #e4e5b250); background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Power Infrastructure (Entity: Object)&lt;br /&gt;Power Infrastructure Damage (Event: Occurrence)&lt;br /&gt;Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)">Power infrastructure</span><span id="highlight-133" class="highlight" style="background-image: linear-gradient(#e4e5b250, #e4e5b250); background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Power Infrastructure Damage (Event: Occurrence)&lt;br /&gt;Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)"> damage</span><span id="highlight-134" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)"> triggers secondary impacts including </span><span id="highlight-135" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550); background-image: linear-gradient(#b2cae550, #b2cae550); background-image: linear-gradient(#b2cae550, #b2cae550);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)&lt;br /&gt;Water System Failures (Entity: Object)&lt;br /&gt;Water System Failures (Event: Occurrence)">water system failures</span><span id="highlight-136" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)">, </span><span id="highlight-137" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550); background-image: linear-gradient(#b2e5b750, #b2e5b750); background-image: linear-gradient(#b2e5b750, #b2e5b750);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)&lt;br /&gt;Telecommunications Outages (Entity: Object)&lt;br /&gt;Telecommunications Outages (Event: Occurrence)">telecommunications outages</span><span id="highlight-138" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)">, and </span><span id="highlight-139" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550); background-image: linear-gradient(#b7e5b250, #b7e5b250);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)&lt;br /&gt;Loss of Refrigeration (Entity: Object)">loss of refrigeration</span><span id="highlight-140" class="highlight" style="background-image: linear-gradient(#e5b2dc50, #e5b2dc50); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Secondary Impacts Triggering (Event: Occurrence)&lt;br /&gt;Refrigeration Loss (Event: Occurrence)">.</span> <span id="highlight-141" class="highlight" style="background-image: linear-gradient(#e1e5b250, #e1e5b250); background-image: linear-gradient(#c4e5b250, #c4e5b250);" data-tippy-content="Populations (Entity: Organization)&lt;br /&gt;Life Threatening Conditions (Event: Occurrence)">Populations</span><span id="highlight-142" class="highlight" style="background-color: #c4e5b2;" data-tippy-content="Life Threatening Conditions (Event: Occurrence)"> dependent on </span><span id="highlight-143" class="highlight" style="background-image: linear-gradient(#c4e5b250, #c4e5b250); background-image: linear-gradient(#b2e5d550, #b2e5d550);" data-tippy-content="Life Threatening Conditions (Event: Occurrence)&lt;br /&gt;Medical Devices (Entity: Object)">medical devices</span><span id="highlight-144" class="highlight" style="background-color: #c4e5b2;" data-tippy-content="Life Threatening Conditions (Event: Occurrence)"> face </span><span id="highlight-145" class="highlight" style="background-image: linear-gradient(#c4e5b250, #c4e5b250); background-image: linear-gradient(#d2b2e550, #d2b2e550);" data-tippy-content="Life Threatening Conditions (Event: Occurrence)&lt;br /&gt;Life-threatening Conditions (Entity: Object)">life-threatening conditions</span><span id="highlight-146" class="highlight" style="background-color: #c4e5b2;" data-tippy-content="Life Threatening Conditions (Event: Occurrence)"> requiring </span><span id="highlight-147" class="highlight" style="background-image: linear-gradient(#c4e5b250, #c4e5b250); background-image: linear-gradient(#e5b2b250, #e5b2b250); background-image: linear-gradient(#e5b2b250, #e5b2b250);" data-tippy-content="Life Threatening Conditions (Event: Occurrence)&lt;br /&gt;Emergency Intervention (Entity: Object)&lt;br /&gt;Emergency Intervention (Event: Action)">emergency intervention</span><span id="highlight-148" class="highlight" style="background-color: #c4e5b2;" data-tippy-content="Life Threatening Conditions (Event: Occurrence)">.</span> <span id="highlight-149" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)">The </span><span id="highlight-150" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#b2b9e550, #b2b9e550); background-image: linear-gradient(#b2b9e550, #b2b9e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Spotting Process (Entity: Object)&lt;br /&gt;Spotting Process (Event: Occurrence)">spotting process</span><span id="highlight-151" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)"> occurs as </span><span id="highlight-152" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#e5b2d950, #e5b2d950);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Burning Materials (Entity: Object)">burning materials</span><span id="highlight-153" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)"> are lofted and transported ahead of the </span><span id="highlight-154" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#e5b2bd50, #e5b2bd50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Fire Front (Entity: Object)">fire front</span><span id="highlight-155" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)">, landing on </span><span id="highlight-156" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#b2dae550, #b2dae550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Roofing (Entity: Object)">roofing</span><span id="highlight-157" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)">, </span><span id="highlight-158" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Decks (Entity: Object)">decks</span><span id="highlight-159" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)">, or </span><span id="highlight-160" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#e5b3b250, #e5b3b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)&lt;br /&gt;Vegetation (Entity: Object)">vegetation</span><span id="highlight-161" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#bde5b250, #bde5b250); background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Burning Materials Lofting (Event: Occurrence)&lt;br /&gt;Burning Materials Transport (Event: Occurrence)&lt;br /&gt;Burning Materials Landing (Event: Occurrence)">.</span> <span id="highlight-162" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2d450, #e5b2d450); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)">Firebrands</span><span id="highlight-163" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)"> initiate new </span><span id="highlight-164" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250); background-image: linear-gradient(#c1b2e550, #c1b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)&lt;br /&gt;Spot Fires (Entity: Object)">spot fires</span><span id="highlight-165" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)">, establishing </span><span id="highlight-166" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250); background-image: linear-gradient(#dce5b250, #dce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)&lt;br /&gt;Ignition Points (Entity: Object)">ignition points</span><span id="highlight-167" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)"> beyond </span><span id="highlight-168" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250); background-image: linear-gradient(#e5b2e350, #e5b2e350);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)&lt;br /&gt;Evacuation Zones (Entity: Location)">evacuation zones</span><span id="highlight-169" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)">, creating simultaneous </span><span id="highlight-170" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250); background-image: linear-gradient(#b2dde550, #b2dde550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)&lt;br /&gt;Structure Fires (Entity: Object)">structure fires</span><span id="highlight-171" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)">, and compromising </span><span id="highlight-172" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)&lt;br /&gt;Transportation Corridors (Entity: Object)">transportation corridors</span><span id="highlight-173" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#c4b2e550, #c4b2e550); background-image: linear-gradient(#d5b2e550, #d5b2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#dfe5b250, #dfe5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Firebrands Initiating Spot Fires (Event: Occurrence)&lt;br /&gt;Ignition Points Establishment (Event: Occurrence)&lt;br /&gt;Structure Fires Creation (Event: Occurrence)&lt;br /&gt;Transportation Corridors Compromising (Event: Occurrence)">.</span> <span id="highlight-174" class="highlight" style="background-image: linear-gradient(#c7b2e550, #c7b2e550); background-image: linear-gradient(#deb2e550, #deb2e550);" data-tippy-content="Populations Isolation (Event: Occurrence)&lt;br /&gt;Resource Movement Prevention (Event: Occurrence)">This isolates vulnerable </span><span id="highlight-175" class="highlight" style="background-image: linear-gradient(#c7b2e550, #c7b2e550); background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#e1e5b250, #e1e5b250);" data-tippy-content="Populations Isolation (Event: Occurrence)&lt;br /&gt;Resource Movement Prevention (Event: Occurrence)&lt;br /&gt;Populations (Entity: Organization)">populations</span><span id="highlight-176" class="highlight" style="background-image: linear-gradient(#c7b2e550, #c7b2e550); background-image: linear-gradient(#deb2e550, #deb2e550);" data-tippy-content="Populations Isolation (Event: Occurrence)&lt;br /&gt;Resource Movement Prevention (Event: Occurrence)"> and prevents </span><span id="highlight-177" class="highlight" style="background-image: linear-gradient(#c7b2e550, #c7b2e550); background-image: linear-gradient(#deb2e550, #deb2e550); background-image: linear-gradient(#b6e5b250, #b6e5b250);" data-tippy-content="Populations Isolation (Event: Occurrence)&lt;br /&gt;Resource Movement Prevention (Event: Occurrence)&lt;br /&gt;Resource Movement (Entity: Object)">resource movement</span><span id="highlight-178" class="highlight" style="background-image: linear-gradient(#c7b2e550, #c7b2e550); background-image: linear-gradient(#deb2e550, #deb2e550);" data-tippy-content="Populations Isolation (Event: Occurrence)&lt;br /&gt;Resource Movement Prevention (Event: Occurrence)">.</span> <span id="highlight-179" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2bd50, #e5b2bd50); background-image: linear-gradient(#e5b2ca50, #e5b2ca50); background-image: linear-gradient(#b2e5c750, #b2e5c750);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Front (Entity: Object)&lt;br /&gt;Fire Fronts Merging (Event: Occurrence)&lt;br /&gt;Intensified Burning Creation (Event: Occurrence)">Fire front</span><span id="highlight-180" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ca50, #e5b2ca50); background-image: linear-gradient(#b2e5c750, #b2e5c750);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Fronts Merging (Event: Occurrence)&lt;br /&gt;Intensified Burning Creation (Event: Occurrence)">s eventually merge, creating intensified burning at </span><span id="highlight-181" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ca50, #e5b2ca50); background-image: linear-gradient(#b2e5c750, #b2e5c750); background-image: linear-gradient(#c5e5b250, #c5e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Fronts Merging (Event: Occurrence)&lt;br /&gt;Intensified Burning Creation (Event: Occurrence)&lt;br /&gt;Intersection Points (Entity: Location)">intersection points</span><span id="highlight-182" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2ca50, #e5b2ca50); background-image: linear-gradient(#b2e5c750, #b2e5c750);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fire Fronts Merging (Event: Occurrence)&lt;br /&gt;Intensified Burning Creation (Event: Occurrence)">.</span> <span id="highlight-183" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)">Structure-to-structure spread dominates </span><span id="highlight-184" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050); background-image: linear-gradient(#b2dbe550, #b2dbe550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)&lt;br /&gt;Dense Neighborhoods (Entity: Location)">dense </span><span id="highlight-185" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050); background-image: linear-gradient(#b2dbe550, #b2dbe550); background-image: linear-gradient(#d3b2e550, #d3b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)&lt;br /&gt;Dense Neighborhoods (Entity: Location)&lt;br /&gt;Neighborhoods (Entity: Location)">neighborhoods</span><span id="highlight-186" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)">, while vegetation-to-structure spread predominates in </span><span id="highlight-187" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050); background-image: linear-gradient(#b2e5c850, #b2e5c850);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)&lt;br /&gt;Lower-density Areas (Entity: Location)">lower-density areas</span><span id="highlight-188" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2e050, #e5b2e050);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Structure To Structure Spread (Event: Occurrence)&lt;br /&gt;Vegetation To Structure Spread (Event: Occurrence)">.</span> <span id="highlight-189" class="highlight" style="background-image: linear-gradient(#b2bfe550, #b2bfe550); background-image: linear-gradient(#b2bfe550, #b2bfe550); background-image: linear-gradient(#b2e5d150, #b2e5d150);" data-tippy-content="Mass Casualty Incidents (Entity: Object)&lt;br /&gt;Mass Casualty Incidents (Event: Occurrence)&lt;br /&gt;Evacuation Routes Compromising (Event: Occurrence)">Mass casualty incidents</span><span id="highlight-190" class="highlight" style="background-color: #b2e5d1;" data-tippy-content="Evacuation Routes Compromising (Event: Occurrence)"> become more likely when </span><span id="highlight-191" class="highlight" style="background-image: linear-gradient(#b2e5d150, #b2e5d150); background-image: linear-gradient(#e5b2c250, #e5b2c250);" data-tippy-content="Evacuation Routes Compromising (Event: Occurrence)&lt;br /&gt;Evacuation Routes (Entity: Object)">evacuation routes</span><span id="highlight-192" class="highlight" style="background-color: #b2e5d1;" data-tippy-content="Evacuation Routes Compromising (Event: Occurrence)"> are compromised.</span> <span id="highlight-193" class="highlight" style="background-image: linear-gradient(#e5b2b950, #e5b2b950); background-image: linear-gradient(#e5b2de50, #e5b2de50);" data-tippy-content="Emergency Services (Entity: Organization)&lt;br /&gt;Emergency Services Overwhelming (Event: Occurrence)">Emergency services</span><span id="highlight-194" class="highlight" style="background-color: #e5b2de;" data-tippy-content="Emergency Services Overwhelming (Event: Occurrence)"> become overwhelmed with </span><span id="highlight-195" class="highlight" style="background-image: linear-gradient(#e5b2de50, #e5b2de50); background-image: linear-gradient(#c4e5b250, #c4e5b250); background-image: linear-gradient(#c4e5b250, #c4e5b250);" data-tippy-content="Emergency Services Overwhelming (Event: Occurrence)&lt;br /&gt;Simultaneous Incidents (Entity: Object)&lt;br /&gt;Simultaneous Incidents (Event: Occurrence)">simultaneous incidents</span><span id="highlight-196" class="highlight" style="background-color: #e5b2de;" data-tippy-content="Emergency Services Overwhelming (Event: Occurrence)">.</span> <span id="highlight-197" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)">The </span><span id="highlight-198" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#e5b2ba50, #e5b2ba50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Decay Phase (Entity: Object)">decay phase</span><span id="highlight-199" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)"> begins when the fire encounters </span><span id="highlight-200" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#e5e5b250, #e5e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Limiting Factors (Entity: Object)">limiting factors</span><span id="highlight-201" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)"> like </span><span id="highlight-202" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#e5b2bf50, #e5b2bf50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Major Roads (Entity: Object)">major roads</span><span id="highlight-203" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)">, </span><span id="highlight-204" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#e5b2ba50, #e5b2ba50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Commercial Districts (Entity: Location)">commercial districts</span><span id="highlight-205" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)">, </span><span id="highlight-206" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#d4b2e550, #d4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Waterways (Entity: Location)">waterways</span><span id="highlight-207" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)">, or </span><span id="highlight-208" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550); background-image: linear-gradient(#b2b6e550, #b2b6e550); background-image: linear-gradient(#b2b6e550, #b2b6e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)&lt;br /&gt;Weather Changes (Entity: Object)&lt;br /&gt;Weather Changes (Event: Change)">weather changes</span><span id="highlight-209" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e2e5b250, #e2e5b250); background-image: linear-gradient(#dfb2e550, #dfb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Decay Phase Beginning (Event: Change)&lt;br /&gt;Fire Encountering Limiting Factors (Event: Occurrence)">.</span> <span id="highlight-210" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)">Active progression slows, though combustion continues in </span><span id="highlight-211" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250); background-image: linear-gradient(#cde5b250, #cde5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)&lt;br /&gt;Collapsed Structures (Entity: Object)">collapsed </span><span id="highlight-212" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250); background-image: linear-gradient(#cde5b250, #cde5b250); background-image: linear-gradient(#d6b2e550, #d6b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)&lt;br /&gt;Collapsed Structures (Entity: Object)&lt;br /&gt;Structures (Entity: Object)">structures</span><span id="highlight-213" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)"> and </span><span id="highlight-214" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250); background-image: linear-gradient(#e4b2e550, #e4b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)&lt;br /&gt;Debris (Entity: Object)">debris</span><span id="highlight-215" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#beb2e550, #beb2e550); background-image: linear-gradient(#e5d1b250, #e5d1b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Active Progression Slowing (Event: Change)&lt;br /&gt;Combustion Continuation (Event: Occurrence)">.</span> <span id="highlight-216" class="highlight" style="background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250);" data-tippy-content="Damage Assessment Operations (Entity: Object)&lt;br /&gt;Damage Assessment Operations (Event: Action)&lt;br /&gt;Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)">Damage assessment operations</span><span id="highlight-217" class="highlight" style="background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250);" data-tippy-content="Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)"> begin while </span><span id="highlight-218" class="highlight" style="background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#e5c5b250, #e5c5b250);" data-tippy-content="Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)&lt;br /&gt;Displaced Populations (Entity: Organization)">displaced populations</span><span id="highlight-219" class="highlight" style="background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250);" data-tippy-content="Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)"> transition to </span><span id="highlight-220" class="highlight" style="background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#b2e5c050, #b2e5c050);" data-tippy-content="Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)&lt;br /&gt;Intermediate Sheltering (Entity: Object)">intermediate sheltering</span><span id="highlight-221" class="highlight" style="background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#e5c2b250, #e5c2b250);" data-tippy-content="Populations Displacement (Event: Occurrence)&lt;br /&gt;Intermediate Sheltering Transition (Event: Change)">.</span> <span id="highlight-222" class="highlight" style="background-image: linear-gradient(#e5b2bb50, #e5b2bb50); background-image: linear-gradient(#b2d1e550, #b2d1e550); background-image: linear-gradient(#e5c1b250, #e5c1b250);" data-tippy-content="Cultural Losses (Entity: Object)&lt;br /&gt;Cultural Losses Becoming Apparent (Event: Change)&lt;br /&gt;Community Assets Damage Documentation (Event: Action)">Cultural losses</span><span id="highlight-223" class="highlight" style="background-image: linear-gradient(#b2d1e550, #b2d1e550); background-image: linear-gradient(#e5c1b250, #e5c1b250);" data-tippy-content="Cultural Losses Becoming Apparent (Event: Change)&lt;br /&gt;Community Assets Damage Documentation (Event: Action)"> become apparent as damage to </span><span id="highlight-224" class="highlight" style="background-image: linear-gradient(#b2d1e550, #b2d1e550); background-image: linear-gradient(#e5c1b250, #e5c1b250); background-image: linear-gradient(#b2cbe550, #b2cbe550);" data-tippy-content="Cultural Losses Becoming Apparent (Event: Change)&lt;br /&gt;Community Assets Damage Documentation (Event: Action)&lt;br /&gt;Community Assets (Entity: Object)">community assets</span><span id="highlight-225" class="highlight" style="background-image: linear-gradient(#b2d1e550, #b2d1e550); background-image: linear-gradient(#e5c1b250, #e5c1b250);" data-tippy-content="Cultural Losses Becoming Apparent (Event: Change)&lt;br /&gt;Community Assets Damage Documentation (Event: Action)"> is documented.</span> <span id="highlight-226" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2d750, #e5b2d750); background-image: linear-gradient(#e5b2d750, #e5b2d750); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Residual Burning (Entity: Object)&lt;br /&gt;Residual Burning (Event: Occurrence)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">Residual burning</span><span id="highlight-227" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)"> creates </span><span id="highlight-228" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#e5b2d250, #e5b2d250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Hazards (Entity: Object)">hazards</span><span id="highlight-229" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)"> including </span><span id="highlight-230" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#b2e5e350, #b2e5e350);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Unstable Structures (Entity: Object)">unstable </span><span id="highlight-231" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#b2e5e350, #b2e5e350); background-image: linear-gradient(#d6b2e550, #d6b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Unstable Structures (Entity: Object)&lt;br /&gt;Structures (Entity: Object)">structures</span><span id="highlight-232" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">, </span><span id="highlight-233" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#e5c0b250, #e5c0b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Air Quality (Entity: Object)">air quality</span><span id="highlight-234" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)"> impacts, and </span><span id="highlight-235" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#d7e5b250, #d7e5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Contamination (Entity: Object)">contamination</span><span id="highlight-236" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)"> from </span><span id="highlight-237" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#b2e5c650, #b2e5c650);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Chemicals (Entity: Object)">chemicals</span><span id="highlight-238" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">, </span><span id="highlight-239" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#e5b2c950, #e5b2c950);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Asbestos (Entity: Object)">asbestos</span><span id="highlight-240" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">, and </span><span id="highlight-241" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#e5e2b250, #e5e2b250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Lead (Entity: Object)&lt;br /&gt;Lead Release (Event: Occurrence)">lead</span><span id="highlight-242" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#cce5b250, #cce5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Lead Release (Event: Occurrence)"> release</span><span id="highlight-243" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">d by </span><span id="highlight-244" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250); background-image: linear-gradient(#b2dde550, #b2dde550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)&lt;br /&gt;Structure Fires (Entity: Object)">structure fires</span><span id="highlight-245" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cdb2e550, #cdb2e550); background-image: linear-gradient(#e5b2c250, #e5b2c250); background-image: linear-gradient(#e5d8b250, #e5d8b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Hazards Creation (Event: Occurrence)&lt;br /&gt;Chemicals Release (Event: Occurrence)&lt;br /&gt;Asbestos Release (Event: Occurrence)">.</span> <span id="highlight-246" class="highlight" style="background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#dde5b250, #dde5b250);" data-tippy-content="Water System Contamination (Entity: Object)&lt;br /&gt;Water System Contamination (Event: Occurrence)&lt;br /&gt;Areas Affecting (Event: Occurrence)">Water system </span><span id="highlight-247" class="highlight" style="background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#e5c2b250, #e5c2b250); background-image: linear-gradient(#dde5b250, #dde5b250); background-image: linear-gradient(#d7e5b250, #d7e5b250);" data-tippy-content="Water System Contamination (Entity: Object)&lt;br /&gt;Water System Contamination (Event: Occurrence)&lt;br /&gt;Areas Affecting (Event: Occurrence)&lt;br /&gt;Contamination (Entity: Object)">contamination</span><span id="highlight-248" class="highlight" style="background-color: #dde5b2;" data-tippy-content="Areas Affecting (Event: Occurrence)"> affects areas beyond the </span><span id="highlight-249" class="highlight" style="background-image: linear-gradient(#dde5b250, #dde5b250); background-image: linear-gradient(#b2e4e550, #b2e4e550);" data-tippy-content="Areas Affecting (Event: Occurrence)&lt;br /&gt;Fire Perimeter (Entity: Location)">fire perimeter</span><span id="highlight-250" class="highlight" style="background-color: #dde5b2;" data-tippy-content="Areas Affecting (Event: Occurrence)">.</span> <span id="highlight-251" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#cee5b250, #cee5b250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Complete Extinguishment (Event: Occurrence)">Complete extinguishment</span><span id="highlight-252" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)"> requires </span><span id="highlight-253" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2d2e550, #b2d2e550); background-image: linear-gradient(#b2d2e550, #b2d2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Water Application (Entity: Object)&lt;br /&gt;Water Application (Event: Action)">water application</span><span id="highlight-254" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">, </span><span id="highlight-255" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#b2e5dc50, #b2e5dc50); background-image: linear-gradient(#b2e5dc50, #b2e5dc50);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Fuel Separation (Entity: Object)&lt;br /&gt;Fuel Separation (Event: Action)">fuel separation</span><span id="highlight-256" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">, or </span><span id="highlight-257" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#d9b2e550, #d9b2e550); background-image: linear-gradient(#d9b2e550, #d9b2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Precipitation (Entity: Object)&lt;br /&gt;Precipitation (Event: Occurrence)">precipitation</span><span id="highlight-258" class="highlight" style="background-color: #b2e5e2;" data-tippy-content="Wildfire (Entity: Object)">.</span> <span id="highlight-259" class="highlight" style="background-image: linear-gradient(#b2e5d350, #b2e5d350); background-image: linear-gradient(#b2e5d350, #b2e5d350); background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Utility Restoration Delays (Entity: Object)&lt;br /&gt;Utility Restoration Delays (Event: Occurrence)&lt;br /&gt;Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)">Utility restoration delays</span><span id="highlight-260" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)"> prolong </span><span id="highlight-261" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Service Disruptions (Entity: Object)">service disruptions</span><span id="highlight-262" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)"> while </span><span id="highlight-263" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#b3b2e550, #b3b2e550);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Hospitals (Entity: Organization)">hospitals</span><span id="highlight-264" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)"> experience elevated </span><span id="highlight-265" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#b2dee550, #b2dee550);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Patient Volumes (Entity: Object)">patient volumes</span><span id="highlight-266" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)"> from </span><span id="highlight-267" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#b2e5cd50, #b2e5cd50); background-image: linear-gradient(#b2e5cd50, #b2e5cd50);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Injuries (Entity: Object)&lt;br /&gt;Injuries (Event: Occurrence)">injuries</span><span id="highlight-268" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)">, </span><span id="highlight-269" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#bfe5b250, #bfe5b250); background-image: linear-gradient(#bfe5b250, #bfe5b250);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Respiratory Issues (Entity: Object)&lt;br /&gt;Respiratory Issues (Event: Occurrence)">respiratory issues</span><span id="highlight-270" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)">, and </span><span id="highlight-271" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850); background-image: linear-gradient(#e5b2e550, #e5b2e550);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)&lt;br /&gt;Stress-related Conditions (Entity: Object)">stress-related conditions</span><span id="highlight-272" class="highlight" style="background-image: linear-gradient(#e4b2e550, #e4b2e550); background-image: linear-gradient(#b2e5b250, #b2e5b250); background-image: linear-gradient(#e5b2d850, #e5b2d850);" data-tippy-content="Service Disruptions Prolonging (Event: Occurrence)&lt;br /&gt;Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)&lt;br /&gt;Stress Related Conditions (Event: Occurrence)">.</span> <span id="highlight-273" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)">The </span><span id="highlight-274" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450); background-image: linear-gradient(#b2e5b450, #b2e5b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)&lt;br /&gt;Burned Area (Entity: Location)">burned area</span><span id="highlight-275" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)"> undergoes physical and </span><span id="highlight-276" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450); background-image: linear-gradient(#ceb2e550, #ceb2e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)&lt;br /&gt;Chemical Changes (Entity: Object)">chemical changes</span><span id="highlight-277" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)"> affecting </span><span id="highlight-278" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450); background-image: linear-gradient(#b2c1e550, #b2c1e550);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)&lt;br /&gt;Infrastructure (Entity: Object)">infrastructure</span><span id="highlight-279" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)">, </span><span id="highlight-280" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450); background-image: linear-gradient(#b2e5b750, #b2e5b750);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties (Entity: Object)">soil properties</span><span id="highlight-281" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)">, and </span><span id="highlight-282" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450); background-image: linear-gradient(#e5cfb250, #e5cfb250);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)&lt;br /&gt;Water Quality (Entity: Object)">water quality</span><span id="highlight-283" class="highlight" style="background-image: linear-gradient(#b2e5e250, #b2e5e250); background-image: linear-gradient(#e5b2c050, #e5b2c050); background-image: linear-gradient(#e5d0b250, #e5d0b250); background-image: linear-gradient(#dab2e550, #dab2e550); background-image: linear-gradient(#b2e5cb50, #b2e5cb50); background-image: linear-gradient(#e5b2b450, #e5b2b450);" data-tippy-content="Wildfire (Entity: Object)&lt;br /&gt;Physical Changes (Entity: Object)&lt;br /&gt;Burned Area Undergoing Changes (Event: Change)&lt;br /&gt;Infrastructure Affecting (Event: Occurrence)&lt;br /&gt;Soil Properties Affecting (Event: Occurrence)&lt;br /&gt;Water Quality Affecting (Event: Occurrence)">.</span> <span id="highlight-284" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)">These changes establish </span><span id="highlight-285" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#e5b2bd50, #e5b2bd50);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)&lt;br /&gt;Baseline Conditions (Entity: Object)">baseline conditions</span><span id="highlight-286" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)"> for </span><span id="highlight-287" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#c8b2e550, #c8b2e550);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)&lt;br /&gt;Recovery (Entity: Object)">recovery</span><span id="highlight-288" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)"> and influence </span><span id="highlight-289" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)&lt;br /&gt;Secondary Hazards (Entity: Object)">secondary hazards</span><span id="highlight-290" class="highlight" style="background-image: linear-gradient(#e5cbb250, #e5cbb250); background-image: linear-gradient(#e5dbb250, #e5dbb250);" data-tippy-content="Baseline Conditions Establishment (Event: Occurrence)&lt;br /&gt;Secondary Hazards Influencing (Event: Occurrence)">.</span> <span id="highlight-291" class="highlight" style="background-image: linear-gradient(#c8b2e550, #c8b2e550); background-image: linear-gradient(#ccb2e550, #ccb2e550);" data-tippy-content="Recovery (Entity: Object)&lt;br /&gt;Recovery Facing Challenges (Event: Occurrence)">Recovery</span><span id="highlight-292" class="highlight" style="background-color: #ccb2e5;" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)"> faces challenges including </span><span id="highlight-293" class="highlight" style="background-image: linear-gradient(#ccb2e550, #ccb2e550); background-image: linear-gradient(#d4e5b250, #d4e5b250); background-image: linear-gradient(#d4e5b250, #d4e5b250);" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)&lt;br /&gt;Debris Removal (Entity: Object)&lt;br /&gt;Debris Removal (Event: Action)">debris removal</span><span id="highlight-294" class="highlight" style="background-color: #ccb2e5;" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)">, </span><span id="highlight-295" class="highlight" style="background-image: linear-gradient(#ccb2e550, #ccb2e550); background-image: linear-gradient(#b2c1e550, #b2c1e550); background-image: linear-gradient(#b2e5e350, #b2e5e350); background-image: linear-gradient(#b2e5e350, #b2e5e350);" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)&lt;br /&gt;Infrastructure (Entity: Object)&lt;br /&gt;Infrastructure Reconstruction (Entity: Object)&lt;br /&gt;Infrastructure Reconstruction (Event: Action)">infrastructure</span><span id="highlight-296" class="highlight" style="background-image: linear-gradient(#ccb2e550, #ccb2e550); background-image: linear-gradient(#b2e5e350, #b2e5e350); background-image: linear-gradient(#b2e5e350, #b2e5e350);" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)&lt;br /&gt;Infrastructure Reconstruction (Entity: Object)&lt;br /&gt;Infrastructure Reconstruction (Event: Action)"> reconstruction</span><span id="highlight-297" class="highlight" style="background-color: #ccb2e5;" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)">, and </span><span id="highlight-298" class="highlight" style="background-image: linear-gradient(#ccb2e550, #ccb2e550); background-image: linear-gradient(#d9e5b250, #d9e5b250); background-image: linear-gradient(#d9e5b250, #d9e5b250);" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)&lt;br /&gt;Housing Replacement (Entity: Object)&lt;br /&gt;Housing Replacement (Event: Action)">housing replacement</span><span id="highlight-299" class="highlight" style="background-color: #ccb2e5;" data-tippy-content="Recovery Facing Challenges (Event: Occurrence)">.</span> <span id="highlight-300" class="highlight" style="background-image: linear-gradient(#e5b2d950, #e5b2d950); background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities (Entity: Object)&lt;br /&gt;Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)">Socioeconomic disparities</span><span id="highlight-301" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)"> become magnified as </span><span id="highlight-302" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#cde5b250, #cde5b250);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)&lt;br /&gt;Communities (Entity: Organization)">communities</span><span id="highlight-303" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)"> with </span><span id="highlight-304" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#e5b2c650, #e5b2c650);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)&lt;br /&gt;Greater Resources (Entity: Object)">greater resources</span><span id="highlight-305" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)"> recover more rapidly, while </span><span id="highlight-306" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#b2b3e550, #b2b3e550);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)&lt;br /&gt;Vulnerable Populations (Entity: Organization)">vulnerable populations</span><span id="highlight-307" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)"> experience </span><span id="highlight-308" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#c9e5b250, #c9e5b250); background-image: linear-gradient(#c9e5b250, #c9e5b250);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)&lt;br /&gt;Prolonged Displacement (Entity: Object)&lt;br /&gt;Prolonged Displacement (Event: Occurrence)">prolonged displacement</span><span id="highlight-309" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)"> and </span><span id="highlight-310" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50); background-image: linear-gradient(#e5b2b850, #e5b2b850); background-image: linear-gradient(#e5b2b850, #e5b2b850);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)&lt;br /&gt;Disproportionate Impacts (Entity: Object)&lt;br /&gt;Disproportionate Impacts (Event: Occurrence)">disproportionate impacts</span><span id="highlight-311" class="highlight" style="background-image: linear-gradient(#b2e5bc50, #b2e5bc50); background-image: linear-gradient(#e5b2ce50, #e5b2ce50);" data-tippy-content="Socioeconomic Disparities Magnification (Event: Change)&lt;br /&gt;Communities Recovery (Event: Occurrence)">.</span>
+        </div>
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="entities">
+                <h4>Entities</h4>
+                
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d4b2e5;"></span>
+            <span>Adjacent Buildings (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c0b2;"></span>
+            <span>Air Quality (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c9;"></span>
+            <span>Asbestos (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2bd;"></span>
+            <span>Baseline Conditions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5b4;"></span>
+            <span>Burned Area (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d9;"></span>
+            <span>Burning Materials (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b7e5;"></span>
+            <span>Canyons (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #ceb2e5;"></span>
+            <span>Chemical Changes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c6;"></span>
+            <span>Chemicals (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cde5b2;"></span>
+            <span>Collapsed Structures (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ba;"></span>
+            <span>Commercial Districts (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cde5b2;"></span>
+            <span>Communities (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2cbe5;"></span>
+            <span>Community Assets (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5bab2;"></span>
+            <span>Connected Vegetation (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d7e5b2;"></span>
+            <span>Contamination (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b5e5b2;"></span>
+            <span>Convection Columns (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c8e5;"></span>
+            <span>Critical Facilities (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2bb;"></span>
+            <span>Cultural Losses (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c2b2;"></span>
+            <span>Damage Assessment Operations (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e4b2e5;"></span>
+            <span>Debris (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d4e5b2;"></span>
+            <span>Debris Removal (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ba;"></span>
+            <span>Decay Phase (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ce;"></span>
+            <span>Decks (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dbe5;"></span>
+            <span>Dense Neighborhoods (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c5b2;"></span>
+            <span>Displaced Populations (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b8;"></span>
+            <span>Disproportionate Impacts (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b7;"></span>
+            <span>Dry Chaparral (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cfb2e5;"></span>
+            <span>Electrical Failures (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b2;"></span>
+            <span>Emergency Intervention (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b9;"></span>
+            <span>Emergency Services (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e4e5b2;"></span>
+            <span>Essential Infrastructure (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b7b2e5;"></span>
+            <span>Evacuation Orders (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b8e5b2;"></span>
+            <span>Evacuation Resources (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c2;"></span>
+            <span>Evacuation Routes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2e3;"></span>
+            <span>Evacuation Zones (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d7e5;"></span>
+            <span>Evacuations (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c1b2;"></span>
+            <span>Fences (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2bd;"></span>
+            <span>Fire Front (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e4e5;"></span>
+            <span>Fire Perimeter (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dfe5;"></span>
+            <span>Fire-altered Weather (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d4;"></span>
+            <span>Firebrands (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2e1;"></span>
+            <span>Firefighting Efforts (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d4b2;"></span>
+            <span>Flames (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5beb2;"></span>
+            <span>Fuel Beds (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5dc;"></span>
+            <span>Fuel Separation (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cee5b2;"></span>
+            <span>Fuels (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c6;"></span>
+            <span>Greater Resources (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d2;"></span>
+            <span>Hazards (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d7e5b2;"></span>
+            <span>Hillside Communities (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5bc;"></span>
+            <span>Homes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b3b2e5;"></span>
+            <span>Hospitals (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9e5b2;"></span>
+            <span>Housing Replacement (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e2;"></span>
+            <span>Human Activities (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dce5b2;"></span>
+            <span>Ignition Points (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Infrastructure (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e3;"></span>
+            <span>Infrastructure Reconstruction (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5cd;"></span>
+            <span>Injuries (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c0;"></span>
+            <span>Intermediate Sheltering (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c5e5b2;"></span>
+            <span>Intersection Points (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5e2b2;"></span>
+            <span>Lead (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d2b2e5;"></span>
+            <span>Life-threatening Conditions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dfe5;"></span>
+            <span>Lightning Strikes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5e5b2;"></span>
+            <span>Limiting Factors (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b7e5b2;"></span>
+            <span>Loss of Refrigeration (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c8;"></span>
+            <span>Lower-density Areas (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2bf;"></span>
+            <span>Major Roads (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2bfe5;"></span>
+            <span>Mass Casualty Incidents (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d5;"></span>
+            <span>Medical Devices (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d0e5;"></span>
+            <span>Multi-story Buildings (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d3b2e5;"></span>
+            <span>Neighborhoods (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c5b2;"></span>
+            <span>Ornamental Vegetation (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d1;"></span>
+            <span>Outbuildings (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dee5;"></span>
+            <span>Patient Volumes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c0;"></span>
+            <span>Physical Changes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #bfe5b2;"></span>
+            <span>Populated Areas (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e1e5b2;"></span>
+            <span>Populations (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5ceb2;"></span>
+            <span>Power Infrastructure (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9b2e5;"></span>
+            <span>Precipitation (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d6e5;"></span>
+            <span>Prioritization Challenges (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c9e5b2;"></span>
+            <span>Prolonged Displacement (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c8b2e5;"></span>
+            <span>Recovery (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2cc;"></span>
+            <span>Residential Areas (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d9;"></span>
+            <span>Residential Landscaping (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d7;"></span>
+            <span>Residual Burning (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b6e5b2;"></span>
+            <span>Resource Movement (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c0;"></span>
+            <span>Resources (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c4;"></span>
+            <span>Respiratory Emergencies (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #bfe5b2;"></span>
+            <span>Respiratory Issues (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dae5;"></span>
+            <span>Roofing (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5dbb2;"></span>
+            <span>Secondary Hazards (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Service Disruptions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b3b2;"></span>
+            <span>Shelter Needs (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c4e5b2;"></span>
+            <span>Simultaneous Incidents (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d9;"></span>
+            <span>Socioeconomic Disparities (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5b7;"></span>
+            <span>Soil Properties (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d5b2;"></span>
+            <span>Southern California (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c1b2e5;"></span>
+            <span>Spot Fires (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b9e5;"></span>
+            <span>Spotting Process (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9e5b2;"></span>
+            <span>Streets (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2e5;"></span>
+            <span>Stress-related Conditions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b5;"></span>
+            <span>Strong Winds (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dde5;"></span>
+            <span>Structure Fires (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d6b2e5;"></span>
+            <span>Structures (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5b7;"></span>
+            <span>Telecommunications Outages (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Transportation Corridors (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d1;"></span>
+            <span>Transportation Infrastructure (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d8b2e5;"></span>
+            <span>Triage Decisions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e3;"></span>
+            <span>Unstable Structures (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ca;"></span>
+            <span>Urban Canopy (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d1b2e5;"></span>
+            <span>Urban Environments (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d7e5b2;"></span>
+            <span>Utility Infrastructure (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d3;"></span>
+            <span>Utility Restoration Delays (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b3b2;"></span>
+            <span>Vegetation (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b3e5;"></span>
+            <span>Vulnerable Populations (Entity: Organization)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d2e5;"></span>
+            <span>Water Application (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5cfb2;"></span>
+            <span>Water Quality (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c2b2;"></span>
+            <span>Water System Contamination (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2cae5;"></span>
+            <span>Water System Failures (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d4b2e5;"></span>
+            <span>Waterways (Entity: Location)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b6e5;"></span>
+            <span>Weather Changes (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d0;"></span>
+            <span>Weather Systems (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e2;"></span>
+            <span>Wildfire (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d4;"></span>
+            <span>Wind Conditions (Entity: Object)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b4e5b2;"></span>
+            <span>Wooden Structures (Entity: Object)</span>
+        </div>
+        
+            </div>
+            <div class="events">
+                <h4>Events</h4>
+                
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #beb2e5;"></span>
+            <span>Active Progression Slowing (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cbe5b2;"></span>
+            <span>Air Quality Impact (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dde5b2;"></span>
+            <span>Areas Affecting (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d8b2;"></span>
+            <span>Asbestos Release (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5cbb2;"></span>
+            <span>Baseline Conditions Establishment (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cfb2e5;"></span>
+            <span>Buildings Threatening (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d0b2;"></span>
+            <span>Burned Area Undergoing Changes (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Burning Materials Landing (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #bde5b2;"></span>
+            <span>Burning Materials Lofting (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5cbb2;"></span>
+            <span>Burning Materials Transport (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5bf;"></span>
+            <span>Cascading Impacts Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2c2;"></span>
+            <span>Chemicals Release (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e0;"></span>
+            <span>Combustion Acceleration (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d1b2;"></span>
+            <span>Combustion Continuation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ce;"></span>
+            <span>Communities Recovery (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c1b2;"></span>
+            <span>Community Assets Damage Documentation (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cee5b2;"></span>
+            <span>Complete Extinguishment (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d6e5b2;"></span>
+            <span>Convection Columns Drawing Air (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5bcb2;"></span>
+            <span>Critical Facilities Evacuation (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d1e5;"></span>
+            <span>Cultural Losses Becoming Apparent (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c2b2;"></span>
+            <span>Damage Assessment Operations (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d4e5b2;"></span>
+            <span>Debris Removal (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e2e5b2;"></span>
+            <span>Decay Phase Beginning (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b8;"></span>
+            <span>Disproportionate Impacts (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cfb2e5;"></span>
+            <span>Electrical Failures (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b2;"></span>
+            <span>Emergency Intervention (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2de;"></span>
+            <span>Emergency Services Overwhelming (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b7b2e5;"></span>
+            <span>Evacuation Orders (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d1;"></span>
+            <span>Evacuation Routes Compromising (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5db;"></span>
+            <span>Evacuation Routes Threatening (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e1e5b2;"></span>
+            <span>Evacuations Triggering (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c6e5;"></span>
+            <span>Fire Advancement (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cce5b2;"></span>
+            <span>Fire Consumption (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b5e5b2;"></span>
+            <span>Fire Developing Sustainable Combustion (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dfb2e5;"></span>
+            <span>Fire Encountering Limiting Factors (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2da;"></span>
+            <span>Fire Engulfing Structures (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #bae5b2;"></span>
+            <span>Fire Entering Establishment Phase (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ce;"></span>
+            <span>Fire Establishment (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5ddb2;"></span>
+            <span>Fire Expansion (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c4b2e5;"></span>
+            <span>Fire Following Paths (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ca;"></span>
+            <span>Fire Fronts Merging (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c1b2;"></span>
+            <span>Fire Growth Phase (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e0b2e5;"></span>
+            <span>Fire Intensification (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5dbb2;"></span>
+            <span>Fire Transition To Urban Canopy (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c4b2e5;"></span>
+            <span>Firebrands Initiating Spot Fires (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d0;"></span>
+            <span>Firefighting Efforts Challenging (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5d4b2;"></span>
+            <span>Flame Height Reaching (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2bce5;"></span>
+            <span>Flames Pulling (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b7e5;"></span>
+            <span>Flames Spreading (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5dc;"></span>
+            <span>Fuel Separation (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cdb2e5;"></span>
+            <span>Hazards Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e1e5b2;"></span>
+            <span>Heat Transfer (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dfb2e5;"></span>
+            <span>Heat Transfer (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5dd;"></span>
+            <span>Heated Air Expelling (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5b2;"></span>
+            <span>Hospitals Experiencing Elevated Patient Volumes (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9e5b2;"></span>
+            <span>Housing Replacement (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e2;"></span>
+            <span>Human Activities (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e4e5;"></span>
+            <span>Ignition (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d5b2e5;"></span>
+            <span>Ignition Points Establishment (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dab2e5;"></span>
+            <span>Infrastructure Affecting (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cab2e5;"></span>
+            <span>Infrastructure Damage (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e3;"></span>
+            <span>Infrastructure Reconstruction (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5cd;"></span>
+            <span>Injuries (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c7;"></span>
+            <span>Intensified Burning Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c2b2;"></span>
+            <span>Intermediate Sheltering Transition (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cce5b2;"></span>
+            <span>Lead Release (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c4e5b2;"></span>
+            <span>Life Threatening Conditions (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dfe5;"></span>
+            <span>Lightning Strikes (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2bfe5;"></span>
+            <span>Mass Casualty Incidents (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2cb;"></span>
+            <span>Materials Ignition (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c9b2;"></span>
+            <span>Neighborhood Destruction (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #cee5b2;"></span>
+            <span>Peak Development (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9e5b2;"></span>
+            <span>Populations Displacement (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c7b2e5;"></span>
+            <span>Populations Isolation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e4e5b2;"></span>
+            <span>Power Infrastructure Damage (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d9b2e5;"></span>
+            <span>Precipitation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e1b2e5;"></span>
+            <span>Preheating (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #ceb2e5;"></span>
+            <span>Prioritization Challenges Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c9e5b2;"></span>
+            <span>Prolonged Displacement (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #ccb2e5;"></span>
+            <span>Recovery Facing Challenges (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b9e5;"></span>
+            <span>Refrigeration Loss (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d7;"></span>
+            <span>Residual Burning (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #deb2e5;"></span>
+            <span>Resource Movement Prevention (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5ca;"></span>
+            <span>Resources Overwhelming (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5c4;"></span>
+            <span>Respiratory Emergencies (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #bfe5b2;"></span>
+            <span>Respiratory Issues (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5dbb2;"></span>
+            <span>Secondary Hazards Influencing (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2dc;"></span>
+            <span>Secondary Impacts Triggering (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Service Disruptions (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e4b2e5;"></span>
+            <span>Service Disruptions Prolonging (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2cee5;"></span>
+            <span>Shelter Needs Creation (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c4e5b2;"></span>
+            <span>Simultaneous Incidents (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5bc;"></span>
+            <span>Socioeconomic Disparities Magnification (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5cb;"></span>
+            <span>Soil Properties Affecting (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b9e5;"></span>
+            <span>Spotting Process (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2d8;"></span>
+            <span>Stress Related Conditions (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2c1e5;"></span>
+            <span>Structure Fires Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b9;"></span>
+            <span>Structure To Structure Spread (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5b7;"></span>
+            <span>Telecommunications Outages (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #dfe5b2;"></span>
+            <span>Transportation Corridors Compromising (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c0b2;"></span>
+            <span>Transportation Infrastructure Overwhelming (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #d8b2e5;"></span>
+            <span>Triage Decisions (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5e0;"></span>
+            <span>Tunneling Effects Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #c9b2e5;"></span>
+            <span>Upslope Progression (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2cfe5;"></span>
+            <span>Utility Infrastructure Threatening (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2e5d3;"></span>
+            <span>Utility Restoration Delays (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2e0;"></span>
+            <span>Vegetation To Structure Spread (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2d2e5;"></span>
+            <span>Water Application (Event: Action)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2b4;"></span>
+            <span>Water Quality Affecting (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5c2b2;"></span>
+            <span>Water System Contamination (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2cae5;"></span>
+            <span>Water System Failures (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2bae5;"></span>
+            <span>Weather Alteration (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2b6e5;"></span>
+            <span>Weather Changes (Event: Change)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #e5b2ce;"></span>
+            <span>Weather Systems Creation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #b2dbe5;"></span>
+            <span>Wildfire Initiation (Event: Occurrence)</span>
+        </div>
+        
+        <div class="legend-item">
+            <span class="legend-color" style="background-color: #deb2e5;"></span>
+            <span>Wind Amplification (Event: Occurrence)</span>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Initialize Tippy.js tooltips
+        document.addEventListener('DOMContentLoaded', function() {
+            tippy('.highlight', {
+                allowHTML: true,
+                arrow: true,
+                theme: 'entity-event',
+                placement: 'top',
+                maxWidth: 350,
+                duration: [50, 100],   // [enter, leave] in ms
+                delay: [0, 50],        // Fast appear, slight delay on disappear
+                animation: 'scale',
+                inertia: true,         // Adds a slight bounce effect
+                interactive: true,     // Allow interacting with tooltip content
+                appendTo: document.body // Ensures tooltips are properly positioned
+            });
+        });
+    </script>
+</body>
+</html>
